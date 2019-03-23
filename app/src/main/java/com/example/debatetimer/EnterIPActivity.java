@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class EnterIPActivity extends AppCompatActivity {
     private EditText ipAddress;
@@ -22,10 +23,16 @@ public class EnterIPActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ipServer = ipAddress.getText().toString().trim();
-                Intent intent = new Intent();
-                intent.setClass(EnterIPActivity.this, DebateActivity.class);
-                startActivity(intent);
-                finish();
+                if(ipServer.equals("")){
+                    Toast.makeText(EnterIPActivity.this,"please input IP address",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Intent intent = new Intent();
+                    intent.setClass(EnterIPActivity.this, DebateActivity.class);
+                    intent.putExtra("ipaddress", ipServer);
+                    startActivity(intent);
+                    finish();
+                }
 
             }
         });
