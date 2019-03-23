@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DebateTimer</string>
+    <string-array name="openingtimearr">
+        <item>120 seconds</item>
+        <item>150 seconds</item>
+        <item>180 seconds</item>
+        <item>210 seconds</item>
+        <item>240 seconds</item>
+    </string-array>
+    <string-array name="freetimearr">
+        <item>420 seconds</item>
+        <item>480 seconds</item>
+        <item>540 seconds</item>
+        <item>600 seconds</item>
+    </string-array>
+    <string-array name="closingtimearr">
+        <item>120 seconds</item>
+        <item>150 seconds</item>
+        <item>180 seconds</item>
+        <item>210 seconds</item>
+        <item>240 seconds</item>
+    </string-array>
+
+</resources>

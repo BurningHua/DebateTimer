@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timeset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time setting"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="right"
+                    android:text="Time of opening statement:   "
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinneropen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:entries="@array/openingtimearr"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="right"
+                    android:text="             Time of free debate:    "
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerfree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/freetimearr"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="right"
+                    android:text=" Time of closing statement:    "
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerclose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/closingtimearr"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnOK"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:text="OK"
+                    android:textColor="#87CEEB"
+                    android:textSize="30sp"
+                    ></Button>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
