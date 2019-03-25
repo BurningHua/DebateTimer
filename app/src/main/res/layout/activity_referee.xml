@@ -15,7 +15,9 @@
         android:layout_marginTop="20dp"
         android:text="Opening statement from the pro"
         android:textSize="40sp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -47,11 +49,10 @@
         android:id="@+id/btnStart"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="START"
         android:layout_marginRight="30dp"
+        android:text="START"
         app:layout_constraintRight_toLeftOf="@id/btnStop"
-        app:layout_constraintTop_toTopOf="@id/btnStop"
-         />
+        app:layout_constraintTop_toTopOf="@id/btnStop" />
 
     <Button
         android:id="@+id/btnStop"
@@ -68,8 +69,8 @@
         android:id="@+id/btnRefresh"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="REFRESH"
         android:layout_marginLeft="30dp"
+        android:text="REFRESH"
         app:layout_constraintLeft_toRightOf="@id/btnStop"
         app:layout_constraintTop_toTopOf="@id/btnStop" />
 
@@ -77,10 +78,10 @@
         android:id="@+id/textViewIP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
         android:text="Your IP address is:"
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"/>
+        app:layout_constraintLeft_toLeftOf="parent" />
 </android.support.constraint.ConstraintLayout>
